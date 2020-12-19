@@ -5,10 +5,6 @@ This is a 3rd person Unreal Engine project that can be used as a framework for m
 
 You are free to view this source code. You are also free to download, modify and compile the code. Content related to Unreal Engine is copyrighted and owned by Epic Games. All other content belong to their respective owners. Content related to Nilapatri is owned by Nilapatri.
 
-Important: If you are modifying the code, change the copyright notice in the first line of each source file in the 'Source' folder. The line below will be found in each source file and must be removed or replaced:
-
-`// © Copyrights 2015-2020 Nilapatri`
-
 ## Compilation
 This project was created and compiled using Unreal Engine 4.22.0. To reduce the upload size, the folders containing the compiled files have been eliminated from this code.
 This code has been tested most recently on Unreal Engine 4.25.4 and ran with no issues.
