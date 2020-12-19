@@ -1,4 +1,4 @@
-// © Copyrights 2015-2020 Nilapatri
+// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
