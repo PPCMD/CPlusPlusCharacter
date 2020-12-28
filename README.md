@@ -20,3 +20,17 @@ To compile the code, follow the steps below:
 * If any error messages were received, close the error message and navigate to Saved\Logs. Check the latest .log file and search for any errors, before a message saying "UnrealBuildTool will quit". The method of fixing errors will vary depending on the type of errors received. Checking Unreal Engine's site regarding them will be helpful. You will need to modify the erroneous source file and change the code wherever required. Fix the errors and repeat the previous procedure.
 * If there are no issues with the code, Unreal Engine should open immediately once compilation is completed.
 * The project will now be working within Unreal Editor 4.
+
+## Screenshots
+
+![Screenshot 1](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot1.png?raw=true)
+![Screenshot 2](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot2.png?raw=true)
+![Screenshot 4](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot4.png?raw=true)
+![Screenshot 5](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot5.png?raw=true)
+![Screenshot 6](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot6.png?raw=true)
+
+## Contact Info
+
+If you wish to contact me for any query such as usage, suggestions, etc., feel free to contact me at 
+[info@nilapatri.com](mailto:info@nilapatri.com) or 
+[ppcmdgames@nilapatri.com](mailto:ppcmdgames@nilapatri.com).
