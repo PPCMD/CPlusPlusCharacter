@@ -6,7 +6,7 @@ This is a 3rd person Unreal Engine project that can be used as a framework for m
 You are free to view this source code. You are also free to download, modify and compile the code. Content related to Unreal Engine is copyrighted and owned by Epic Games. All other content belong to their respective owners. Content related to Nilapatri is owned by Nilapatri.
 
 ## Compilation
-This project was created and compiled using Unreal Engine 4.22.0. To reduce the upload size, the folders containing the compiled files have been eliminated from this code.
+This project was created and compiled using Unreal Engine 4.22.0. To reduce the upload size, the folders containing the compiled files have been eliminated from this code.  
 This code has been tested most recently on Unreal Engine 4.25.4 and ran with no issues.
 To compile the code, follow the steps below:
 
@@ -24,11 +24,11 @@ To compile the code, follow the steps below:
 ### Controls
 
 The default controls for this game (adjustable in Preferences) are:
-`D - Jump`
-`S - Interact`
-`A - Spawn Objects`
-`F - Apply Impulse`
-`Mouse Aim/2, W, E, Q - Camera Control`
+`D - Jump  
+S - Interact  
+A - Spawn Objects  
+F - Apply Impulse  
+Mouse Aim/2, W, E, Q - Camera Control`
 
 ## Screenshots
 
