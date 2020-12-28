@@ -23,11 +23,11 @@ To compile the code, follow the steps below:
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot1.png?raw=true)
-![Screenshot 2](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot2.png?raw=true)
-![Screenshot 4](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot4.png?raw=true)
-![Screenshot 5](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot5.png?raw=true)
-![Screenshot 6](https://github.com/PPCMD/CPlusPlusCharacter/blob/main/Screenshot6.png?raw=true)
+![Screenshot 1](https://raw.githubusercontent.com/PPCMD/CPlusPlusCharacter/main/Screenshots/Screenshot1.png)
+![Screenshot 2](https://raw.githubusercontent.com/PPCMD/CPlusPlusCharacter/main/Screenshots/Screenshot2.png)
+![Screenshot 4](https://raw.githubusercontent.com/PPCMD/CPlusPlusCharacter/main/Screenshots/Screenshot4.png)
+![Screenshot 5](https://raw.githubusercontent.com/PPCMD/CPlusPlusCharacter/main/Screenshots/Screenshot5.png)
+![Screenshot 6](https://raw.githubusercontent.com/PPCMD/CPlusPlusCharacter/main/Screenshots/Screenshot6.png)
 
 ## Contact Info
 
