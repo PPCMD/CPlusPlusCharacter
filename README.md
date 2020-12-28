@@ -24,11 +24,11 @@ To compile the code, follow the steps below:
 ### Controls
 
 The default controls for this game (adjustable in Preferences) are:
-`D - Jump
-S - Interact
-A - Spawn Objects
-F - Apply Impulse
-Mouse Aim/2, W, E, Q - Camera Control`
+`D - Jump`
+`S - Interact`
+`A - Spawn Objects`
+`F - Apply Impulse`
+`Mouse Aim/2, W, E, Q - Camera Control`
 
 ## Screenshots
 
