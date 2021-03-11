@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// © Coyrights Nilapatri, All Rights Reserved
 
 #include "CharacterClass.h"
 #include "GameFramework/SpringArmComponent.h"

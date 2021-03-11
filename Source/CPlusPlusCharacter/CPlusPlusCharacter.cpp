@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// © Copyrights Nilapatri, All Rights Reserved
 
 #include "CPlusPlusCharacter.h"
 #include "Modules/ModuleManager.h"
