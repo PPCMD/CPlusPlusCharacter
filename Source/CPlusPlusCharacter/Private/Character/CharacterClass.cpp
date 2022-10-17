@@ -26,7 +26,9 @@ ACharacterClass::ACharacterClass()
 	/* Not recommended as default values alreay exist and using this will make 
 	recompiling necessary every time the value needs to be changed. */
 	// CameraSpring->TargetArmLength = 400;
-	CameraSpring->TargetArmLength = 350.0f;
+	DefaultSpringLength = 350.0f;
+	FirstPersonSpringLength = 0.0f;
+	CameraSpring->TargetArmLength = DefaultSpringLength;
 
 	PlayerCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	PlayerCamera->SetupAttachment(CameraSpring);
@@ -153,6 +155,16 @@ void ACharacterClass::InteractPressed()
 	}
 }
 
+void ACharacterClass::CursorFocusStart_Implementation()
+{
+
+}
+
+void ACharacterClass::CursorFocusStop_Implementation()
+{
+
+}
+
 void ACharacterClass::TraceForward_Implementation()
 {
 	FVector ActorLocation;
@@ -186,6 +198,7 @@ void ACharacterClass::TraceForward_Implementation()
 					if (Interface)
 					{
 						Interface->Execute_EndFocus(FocusedActor);
+						CursorFocusStop();
 					}
 				}
 
@@ -194,6 +207,7 @@ void ACharacterClass::TraceForward_Implementation()
 				if (Interface)
 				{
 					Interface->Execute_StartFocus(Interactable);
+					CursorFocusStart();
 				}
 
 				FocusedActor = Interactable;
@@ -207,6 +221,7 @@ void ACharacterClass::TraceForward_Implementation()
 				if (Interface)
 				{
 					Interface->Execute_EndFocus(FocusedActor);
+					CursorFocusStop();
 				}
 			}
 
@@ -292,6 +307,18 @@ void ACharacterClass::FireForward()
 	}
 }
 
+void ACharacterClass::SwitchView()
+{
+	if (FirstPersonView)
+	{
+		CameraSpring->TargetArmLength = DefaultSpringLength;
+		FirstPersonView = false;
+	} else {
+		CameraSpring->TargetArmLength = FirstPersonSpringLength;
+		FirstPersonView = true;
+	}
+}
+
 void ACharacterClass::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -299,9 +326,9 @@ void ACharacterClass::Tick(float DeltaTime)
 	TraceForward();
 }
 
-/* void ACharacterClass::Fire()
+void ACharacterClass::Fire()
 {
-	if (ProjectileClass != NULL)
+	/* if (ProjectileClass != NULL)
 	{
 		UWorld* const World = GetWorld();
 		if (World != NULL)
@@ -321,8 +348,8 @@ void ACharacterClass::Tick(float DeltaTime)
 	if (FireSound != NULL )
 	{
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-	}
-} */
+	} */
+}
 
 void ACharacterClass::OnOverlapBegin(UPrimitiveComponent * OverlappedComp, AActor * OtherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
@@ -345,6 +372,7 @@ void ACharacterClass::SetupPlayerInputComponent(UInputComponent* PlayerInputComp
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ACharacterClass::InteractPressed);
 	PlayerInputComponent->BindAction("Spawn", IE_Pressed, this, &ACharacterClass::SpawnPressed);
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACharacterClass::FireForward);
+	PlayerInputComponent->BindAction("SwitchView", IE_Pressed, this, &ACharacterClass::SwitchView);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &ACharacterClass::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacterClass::MoveRight);
